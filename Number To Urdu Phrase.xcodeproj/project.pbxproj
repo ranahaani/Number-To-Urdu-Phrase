@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA16A63822BD40FD00755102 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16A63722BD40FD00755102 /* main.swift */; };
+		EA16A63F22BD65FA00755102 /* RomanGinti.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA16A63E22BD65FA00755102 /* RomanGinti.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		EA16A63422BD40FD00755102 /* Number To Urdu Phrase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Number To Urdu Phrase"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA16A63722BD40FD00755102 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EA16A63E22BD65FA00755102 /* RomanGinti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanGinti.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				EA16A63722BD40FD00755102 /* main.swift */,
+				EA16A63E22BD65FA00755102 /* RomanGinti.swift */,
 			);
 			path = "Number To Urdu Phrase";
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA16A63822BD40FD00755102 /* main.swift in Sources */,
+				EA16A63F22BD65FA00755102 /* RomanGinti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
