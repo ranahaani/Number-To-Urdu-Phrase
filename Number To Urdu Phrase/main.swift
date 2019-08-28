@@ -47,7 +47,7 @@ func convertNumberToPharase(input: String)->Void  {
     let inputNumber = Int(input)
     if let number = inputNumber{
         let digits = number.digitCount
-        if digits >= 1 && digits <= 4 {
+        if digits >= 1 && digits <= 7 {
             if digits == 1 || digits == 2 {
                 print(RomanGinti(rawValue: number)!)
             }
@@ -58,7 +58,7 @@ func convertNumberToPharase(input: String)->Void  {
                 print("\(RomanGinti(rawValue: firstDigit)!) Sow \(RomanGinti(rawValue: num)!)")
                 
             }
-            else if digits == 4{
+            else if digits == 4 || digits == 5{
                 var num = number
                 let firstDigit = num / 1000
                 num = num % 1000
@@ -67,9 +67,19 @@ func convertNumberToPharase(input: String)->Void  {
                 print("\(RomanGinti(rawValue: firstDigit)!) Hazzar \(RomanGinti(rawValue: secondDigit)!) Sow \(RomanGinti(rawValue: num)!)")
                 
             }
+            else if digits == 6 || digits == 7 {
+                var num = number
+                let firstDigit = num / 100000
+                num = num % 100000
+                let secondDigit = num / 1000
+                num = num % 1000
+                let thirdDigit = num / 100
+                num = num % 100
+                print("\(RomanGinti(rawValue: firstDigit)!) Lakh \(RomanGinti(rawValue: secondDigit)!) Hazar \(RomanGinti(rawValue: thirdDigit)!) Sow \(RomanGinti(rawValue: num)!)")
+            }
         }
         else{
-            print("Number should be between 0 to 9999")
+            print("Number should be between 0 to 9999999")
         }
     }
     else{
@@ -77,11 +87,8 @@ func convertNumberToPharase(input: String)->Void  {
     }
 }
 
-
-
-
 func main(){
-    print("Please input a number", "To Exit Enter Q")
+    print("Please input a number", "\nTo Exit Enter Q")
     while true {
         let input = readLine(strippingNewline: true)
         if input == "q" || input == "Q"{
